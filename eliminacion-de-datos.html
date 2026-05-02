@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eliminación de Datos de Usuario - Claude Code (Read KPI's)</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'DM Sans', sans-serif; background: #f8f9fa; color: #2d3436; line-height: 1.7; }
+  .container { max-width: 780px; margin: 0 auto; padding: 60px 24px; }
+  .header { margin-bottom: 48px; padding-bottom: 32px; border-bottom: 3px solid #1877F2; }
+  .header h1 { font-size: 2rem; font-weight: 700; color: #1B2A4A; margin-bottom: 8px; }
+  .header .subtitle { color: #636e72; font-size: 0.95rem; }
+  .header .app-name { color: #1877F2; font-weight: 600; }
+  h2 { font-size: 1.25rem; color: #1B2A4A; margin: 36px 0 12px; padding-left: 16px; border-left: 4px solid #1877F2; }
+  p { margin-bottom: 14px; font-size: 0.95rem; }
+  ul { margin: 10px 0 18px 28px; }
+  li { margin-bottom: 8px; font-size: 0.95rem; }
+  .date { margin-top: 48px; padding-top: 24px; border-top: 1px solid #dfe6e9; color: #636e72; font-size: 0.85rem; }
+  .contact { background: #edf5ff; border-radius: 8px; padding: 20px; margin-top: 24px; }
+  .contact strong { color: #1877F2; }
+  .steps { background: #f0f7ff; border-radius: 8px; padding: 20px 20px 20px 36px; margin: 16px 0; }
+  .steps li { margin-bottom: 10px; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Eliminación de Datos de Usuario</h1>
+    <p class="subtitle">Aplicación: <span class="app-name">Claude Code (Read KPI's)</span></p>
+  </div>
+
+  <h2>1. Introducción</h2>
+  <p>En <strong>Claude Code (Read KPI's)</strong> respetamos su derecho a controlar sus datos personales. Esta página describe qué datos recopilamos, cómo los utilizamos y cómo puede solicitar su eliminación en cualquier momento.</p>
+
+  <h2>2. Datos que recopilamos</h2>
+  <p>La aplicación accede únicamente a los siguientes datos, derivados de la autorización que usted otorga a través de la Marketing API de Meta:</p>
+  <ul>
+    <li>Identificador de cuenta publicitaria (Ad Account ID).</li>
+    <li>Métricas de rendimiento de campañas (impresiones, clics, gasto, CTR, CPC, CPM, ROAS, entre otras).</li>
+    <li>Estructura de campañas, conjuntos de anuncios y anuncios existentes.</li>
+    <li>Token de acceso temporal requerido para la consulta de datos vía API.</li>
+  </ul>
+  <p>La aplicación <strong>NO</strong> recopila datos personales de usuarios finales, datos de pago, contraseñas ni información sensible ajena a las métricas publicitarias.</p>
+
+  <h2>3. Uso de los datos</h2>
+  <p>Los datos consultados se utilizan exclusivamente para:</p>
+  <ul>
+    <li>Mostrar métricas e informes de rendimiento publicitario al usuario autenticado.</li>
+    <li>Generar visualizaciones y resúmenes de KPIs dentro de la sesión activa.</li>
+  </ul>
+  <p>No compartimos, vendemos ni cedemos sus datos a terceros bajo ninguna circunstancia.</p>
+
+  <h2>4. Retención de datos</h2>
+  <p>La aplicación no almacena datos de manera permanente en servidores propios. Los datos se consultan en tiempo real desde la API de Meta durante la sesión activa y no se guardan una vez finalizada la sesión. Los tokens de acceso se mantienen únicamente durante el tiempo necesario para completar la consulta.</p>
+
+  <h2>5. Cómo solicitar la eliminación de sus datos</h2>
+  <p>Dado que la aplicación no almacena datos de forma persistente, la eliminación efectiva de cualquier vínculo entre su cuenta y la aplicación se realiza revocando el acceso directamente desde Meta. Para ello, siga estos pasos:</p>
+  <ol class="steps">
+    <li>Inicie sesión en su cuenta de <strong>Facebook</strong>.</li>
+    <li>Vaya a <strong>Configuración y privacidad → Configuración</strong>.</li>
+    <li>En el menú lateral, seleccione <strong>Aplicaciones y sitios web</strong>.</li>
+    <li>Busque <strong>Claude Code (Read KPI's)</strong> en la lista de aplicaciones conectadas.</li>
+    <li>Haga clic en <strong>Eliminar</strong> y confirme la acción.</li>
+  </ol>
+  <p>Al completar este proceso, el acceso de la aplicación a su cuenta publicitaria quedará revocado de forma inmediata y definitiva.</p>
+
+  <h2>6. Solicitud de eliminación por correo electrónico</h2>
+  <p>Si prefiere solicitar la eliminación de cualquier dato residual directamente con nosotros, puede enviarnos un correo electrónico a <strong>neotrading333@gmail.com</strong> con el asunto <strong>"Solicitud de eliminación de datos"</strong>. Su solicitud será procesada en un plazo máximo de <strong>30 días hábiles</strong>.</p>
+  <p>Para agilizar el proceso, incluya en su mensaje:</p>
+  <ul>
+    <li>El identificador de su cuenta publicitaria de Meta (Ad Account ID).</li>
+    <li>El correo electrónico asociado a su cuenta de Meta Business Manager.</li>
+    <li>Una descripción breve del motivo de la solicitud (opcional).</li>
+  </ul>
+
+  <h2>7. Derechos del usuario</h2>
+  <p>De conformidad con la normativa de protección de datos aplicable, usted tiene derecho a:</p>
+  <ul>
+    <li><strong>Acceder</strong> a los datos que la aplicación ha consultado durante sus sesiones.</li>
+    <li><strong>Rectificar</strong> cualquier dato inexacto asociado a su cuenta.</li>
+    <li><strong>Eliminar</strong> el vínculo entre su cuenta y la aplicación en cualquier momento.</li>
+    <li><strong>Oponerse</strong> al tratamiento de sus datos y retirar el consentimiento otorgado.</li>
+  </ul>
+
+  <h2>8. Cambios en esta política</h2>
+  <p>Nos reservamos el derecho de actualizar esta política de eliminación de datos en cualquier momento. Cualquier cambio será publicado en esta página con la fecha de actualización correspondiente. Le recomendamos revisar esta página periódicamente.</p>
+
+  <h2>9. Legislación aplicable</h2>
+  <p>Esta política se rige por las leyes de protección de datos aplicables en la jurisdicción del usuario y por las <a href="https://developers.facebook.com/terms/" target="_blank">Políticas de la Plataforma de Meta para Desarrolladores</a>.</p>
+
+  <div class="contact">
+    <strong>Contacto para solicitudes de eliminación de datos</strong>
+    <p>Correo electrónico: <strong>neotrading333@gmail.com</strong><br>
+    Asunto sugerido: <strong>"Solicitud de eliminación de datos"</strong><br>
+    Tiempo de respuesta: máximo <strong>30 días hábiles</strong>.</p>
+  </div>
+
+  <p class="date">Última actualización: 29 de abril de 2026</p>
+</div>
+</body>
+</html>
