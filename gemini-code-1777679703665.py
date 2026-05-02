@@ -1,7 +1,4 @@
-import os
-
-# Contenido HTML optimizado para visualización directa en el navegador
-html_content = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -99,9 +96,4 @@ html_content = """<!DOCTYPE html>
 </html>
 """
 
-# Guardar el archivo físicamente
-file_name = "visualizar_instrucciones_meta.html"
-with open(file_name, "w", encoding="utf-8") as f:
-    f.write(html_content)
 
-print(file_name)
